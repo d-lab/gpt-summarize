@@ -1,0 +1,25 @@
+#@package _global_
+defaults:
+  - /mephisto/blueprint: static_react_task
+  - /mephisto/architect: ec2
+  - /mephisto/provider: mock
+mephisto:
+  log_level: debug
+  architect:
+    _architect_type: ec2
+    profile_name: mpt
+    subdomain: "mpt-d.mpt"
+  blueprint:
+    data_json: ${task_dir}/data.json
+    task_source: ${task_dir}/webapp/build/bundle.js
+    link_task_source: false
+    extra_source_dir: ${task_dir}/webapp/src/static
+    units_per_assignment: 1
+  task:
+    task_name: mpt-d
+    task_title: "Sample mephisto task"
+    task_description: "This is sample mephisto task."
+    task_reward: 0.01
+    task_tags: "entity, same class, knowledge graph"
+    # We expect to be able to handle 300 concurrent tasks without issue
+    max_num_concurrent_units: 300

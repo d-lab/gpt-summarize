@@ -1,0 +1,16 @@
+[
+  {
+    "tokens_values": {
+      "company_name": "Facebook",
+      "about_section_items": "insertions/about_section_items.html",
+      "since_age": 18
+    }
+  },
+  {
+    "tokens_values": {
+      "company_name": "Mephisto",
+      "about_section_items": "insertions/about_section_items.html",
+      "since_age": 18
+    }
+  }
+]

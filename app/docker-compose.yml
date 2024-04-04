@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  mephisto-service:
+    container_name: ${PROJECT_NAME}-service
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: >
+      sh -c "../mephisto/scripts/metrics/shutdown_metrics.py || true && python3 deploy.py"
+#    command: ["sleep", "infinity"]
+    ports:
+      - 3000:3000
+      - 3032:3032
+    environment:
+      - APP_NAME=temp
+      - APP_ENV=dev
+    volumes:
+      - ./webapp/src:/mephisto/app/webapp/src:cached
+      - .:/mephisto/app:cached
+      - /mephisto/app/webapp/node_modules/
+      - ./data:/mephisto/data/results:cached
+#      - ../mephisto:/mephisto/mephisto:cached
+#      - ../examples:/mephisto/examples:cached
+#      - ../packages:/mephisto/packages:cached
