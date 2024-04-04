@@ -67,3 +67,15 @@ code {
 p {
   margin: 5px 0 5px 0;
 }
+
+.big-number {
+  font-size: 200%;
+}
+
+.big-number.success {
+  color: #56d572;
+}
+
+.big-number.danger {
+  color: #ff6d6d;
+}

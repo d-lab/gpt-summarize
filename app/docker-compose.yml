@@ -17,8 +17,8 @@ services:
       - APP_ENV=dev
     volumes:
       - ./webapp/src:/mephisto/app/webapp/src:cached
-      - .:/mephisto/app:cached
-      - /mephisto/app/webapp/node_modules/
+#      - .:/mephisto/app:cached
+#      - /mephisto/app/webapp/node_modules/
       - ./data:/mephisto/data/results:cached
 #      - ../mephisto:/mephisto/mephisto:cached
 #      - ../examples:/mephisto/examples:cached
