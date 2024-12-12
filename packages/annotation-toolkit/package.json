@@ -19,7 +19,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@blueprintjs/core": "^3.42.0",
-    "@blueprintjs/icons": "^3.26.0",
+    "@blueprintjs/icons": "^5.9.0",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "babel-eslint": "10.x",
@@ -47,7 +47,7 @@
   },
   "peerDependencies": {
     "@blueprintjs/core": "^3.42.0",
-    "@blueprintjs/icons": "^3.26.0",
+    "@blueprintjs/icons": "^5.9.0",
     "global-context-store": "^1.0.1",
     "react": "^16.8 || 17 || 18",
     "react-dom": "^16.8 || 17 || 18",
